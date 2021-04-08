@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB-115 Final Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1 class="header__headings">Shannon Kotraba</h1>
+    <h4 class="header__headings">WEB-115 Section 0082</h4>
+    <h4 class="header__headings">Building a Resume</h4>
+  </div>
+
+  <!-- Form -->
+  <div class="form">
+    <form class="flex" >
+      <div>
+        <!-- Information -->
+        <h4>Personal Information</h4>
+        <label for="name">Enter your full name</label>
+        <input id="name" type="text"><br><br>
+        <label for="city">Enter your City</label>
+        <input id="city" type="text"><br><br>
+        <label for="state">Enter your State</label>
+        <input id="state" type="text"><br><br>
+        <label for="email">Enter your Email</label>
+        <input id="email" type="email"><br><br>
+        <label for="phone">Enter your Phone Number</label>
+          <input id="phone" type="phone"><br><br>
+      </div>
+      <!-- Links -->
+      <form class="form" >
+        <div>
+          <h4>Links</h4>
+          <label for="linkedin">Enter LinkedIn</label>
+          <input id="linkedin" type="text"><br><br>
+          <label for="portfolio">Enter your portfolio</label>
+          <input id="portfolio" type="text"><br><br>
+          <label for="github">Enter your GitHub</label>
+          <input id="github" type="text"><br><br>
+        </div>
+    </form>
+    <!-- Description/About -->
+    <h3 class="headings">Objective/Description</h3>
+    <form class="flex">
+      <div>
+        <textarea name="about" id="about" cols="50" rows="10" placeholder="Enter Objective here"></textarea>
+      </div>
+    </form>
+    <!-- Skills -->
+    <h3 class="headings">Skill Set</h3>
+    <form class="flex">
+      <div>
+        <textarea name="skills" id="skills" cols="50" rows="10" placeholder="Enter technical skills here"></textarea>
+      </div>
+    </form>
+    <!-- Something Else -->
+    <h3 class="headings">Something else</h3>
+    <form class="flex">
+      <div>
+        <textarea name="skills" id="skills" cols="50" rows="10" placeholder="Enter something"></textarea>
+      </div>
+    </form>
+    <!-- Experience -->
+    <!-- Work1 -->
+    <h3 class="headings">Prior Experience</h3>
+    <form class="form">
+      <div class="flex">
+        <div>
+          <label for="work1">Date Started</label>
+        </div>
+        <div>
+          <input type="date">
+        </div>
+        <div>
+          <label for="work1">Date Ended</label>
+        </div>
+        <div>
+          <input type="date">
+        </div>
+      </div>
+      <!-- Work2 -->
+      <div>
+        <label for="workname">Enter Position title:</label>
+        <input type="text">
+        <label for="workdescription2"></label>
+        <textarea name="workdescription2" id="workdescription2" cols="30" rows="10" placeholder="Enter job description"></textarea>
+      </div>
+      <div class="flex">
+        <div>
+          <label for="work2">Date Started</label>
+        </div>
+        <div>
+          <input type="date">
+        </div>
+        <div>
+          <label for="work1">Date Ended</label>
+        </div>
+        <div>
+          <input type="date">
+        </div>
+      </div>
+      <div>
+        <label for="workname">Enter Position title:</label>
+        <input type="text">
+        <label for="workdescription1"></label>
+        <textarea name="workdescription1" id="workdescription1" cols="30" rows="10" placeholder="Enter job description"></textarea>
+      </div>
+    </form>
+    <!-- Education -->
+    <h3 class="headings">Education</h3>
+    <form class="form">
+      <div>
+        <label for="schoolName">Enter School Name:</label>
+        <input type="text">
+      </div>
+      <div class="flex radioHolder">
+        <label for="radio">Bachelors</label>
+        <input type="radio" name="degree">
+        <label for="radio">Associates</label>
+        <input type="radio" name="degree">
+        <label for="radio">In Progress</label>
+        <input type="radio" name="degree">
+      </div>
+      <div class="flex">
+        <div>
+          <label for="work1">Date Graduated</label>
+        </div>
+        <div>
+          <input type="date">
+        </div>
+      </div>
+      
+    </form>
+    <button class="myBtn" onclick="myfunc()">Create Resume!</button>
+  </div>
+  
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
